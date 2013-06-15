@@ -16,10 +16,10 @@ Added in this fork:
 
 
 *Via git submodules (recommended):*
-The PHPExcel library (version 1.7.6) is now linked as a git submodule to vendor/phpexcel relative to the phpexcel module installation folder.
+The PHPExcel library (version 1.7.9) is now linked as a git submodule to vendor/phpexcel relative to the phpexcel module installation folder.
 Clone the repository via:
 
-    git submodule add git://github.com/rafsoaken/kohana-phpexcel.git modules/phpexcel
+    git submodule add git://github.com/BLage/kohana-phpexcel.git modules/phpexcel
     git submodule init
 
 Then update the git submodule and the contained vendor/phpexcel sub-submodule from the repository root:
