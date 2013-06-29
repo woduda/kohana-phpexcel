@@ -283,14 +283,13 @@ class Spreadsheet {
            * Send spreadsheet to browser without save to a file
            * @return void 
            */
-          public function send()
+          public function send(Kohana_Response $response)
           {                   
-                    $response = Request::current()->response();
-                    $response->send_file(
-                            $this->save(),
-                            $this->options['name'].'.'.$this->exts[$this->options['format']], // filename
-                            array(
-                                  'mime_type' => $this->mimes[$this->options['format']]
-                            ));
+              $response->send_file(
+                      $this->save(),
+                      $this->options['name'].'.'.$this->exts[$this->options['format']], // filename
+                      array(
+                            'mime_type' => $this->mimes[$this->options['format']]
+                      ));
           }
 }
