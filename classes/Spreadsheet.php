@@ -170,7 +170,7 @@ class Spreadsheet {
 					{
 						// check if is_null or empty
 						$value = $cell->getValue();
-						$array_data[$rowIndex][$cell->getColumn()] = (strtolower($value) == 'null' OR empty($value)) ? null : $cell->getCalculatedValue();
+						$array_data[$rowIndex][$cell->getColumn()] = (strtolower($value) == 'null' OR empty($value)) ? null : $cell->getFormattedValue();
 					}
 					// For check empty values
 					$values[] = $cell->getValue();
