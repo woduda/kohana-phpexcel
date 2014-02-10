@@ -156,8 +156,8 @@ class Spreadsheet {
 
 								break;
 							case 'float':
-								$value = $cell->getValue();
-								if (is_numeric($value))
+								$value = $cell->getCalculatedValue();
+								if (is_float($value))
 								{
 									$value = sprintf($format[1], $value);
 								}
